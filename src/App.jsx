@@ -18,6 +18,7 @@ const App = () => {
         <Route path="/priority" element={<PriorityPage/>}   />
       </Routes>
     </BrowserRouter>
+    
   )
 }
 
