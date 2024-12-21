@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 
 const InputForm = ({onSubmit}) => {
 
-  const [processes, setProcesses] = useState([{ arrival: "", burst: "", priority: "" }]);
-  // const [processes, setProcesses] = useState([
-  //   { arrival: "0", burst: "4", priority: "0" },
-  //   { arrival: "1", burst: "3", priority: "0" },
-  //   { arrival: "2", burst: "1", priority: "0" },
-  //   { arrival: "3", burst: "2", priority: "0" },
-  //   { arrival: "4", burst: "6", priority: "0" },
+  // const [processes, setProcesses] = useState([{ arrival: "", burst: "", priority: "" }]);
+  const [processes, setProcesses] = useState([
+    { arrival: "0", burst: "4", priority: "0" },
+    { arrival: "1", burst: "3", priority: "0" },
+    { arrival: "2", burst: "1", priority: "0" },
+    { arrival: "3", burst: "2", priority: "0" },
+    { arrival: "4", burst: "6", priority: "0" },
     
-  // ]);
+  ]);
 
   // add a new empty row for process input
   const addProcess=()=>{
