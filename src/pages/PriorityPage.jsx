@@ -27,7 +27,7 @@ const PriorityPage = () => {
             results.length > 0 && (
               <>
                 <ResultsTable results={results}/>
-                {/* <GanttChart results={results}/> */}
+
               </>
             ) 
           }

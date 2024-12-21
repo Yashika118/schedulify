@@ -48,6 +48,6 @@ export const srtf = (processes) => {
         time++;
     }
     results.sort((a, b) => a.temp - b.temp);
-    console.log("SRTF Results:", results);
+    // console.log("SRTF Results:", results);
     return results;
 };

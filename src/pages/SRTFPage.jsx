@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar'
 import InputForm from '../components/InputForm';
 import ResultsTable from '../components/ResultsTable.jsx';
 import {srtf} from '../Algorithms/SrtfAlgo.js';
-import GanttChart from '../components/GanttChart.jsx';
 
 const SRTFPage = () => {
 
@@ -29,7 +28,7 @@ const SRTFPage = () => {
             results.length > 0 && (
               <>
                 <ResultsTable results={results}/>
-                {/* <GanttChart results={results}/> */}
+                
               </>
             ) 
           }

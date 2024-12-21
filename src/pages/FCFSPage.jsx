@@ -29,7 +29,7 @@ const FCFSPage = () => {
             results.length > 0 && (
               <>
                 <ResultsTable results={results}/>
-                {/* <GanttChart results={results}/> */}
+                <GanttChart results={results}/>
               </>
             ) 
           }

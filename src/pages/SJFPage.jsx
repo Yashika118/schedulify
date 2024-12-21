@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import InputForm from '../components/InputForm';
 import ResultsTable from '../components/ResultsTable.jsx';
 import {sjf} from '../Algorithms/SjfAlgo.js';
-import GanttChart from '../components/GanttChart.jsx';
+
 
 const SJFPage = () => {
 
@@ -29,7 +29,7 @@ const SJFPage = () => {
             results.length > 0 && (
               <>
                 <ResultsTable results={results}/>
-                {/* <GanttChart results={results}/> */}
+                
               </>
             ) 
           }
