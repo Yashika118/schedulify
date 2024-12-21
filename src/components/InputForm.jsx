@@ -4,12 +4,11 @@ const InputForm = ({onSubmit}) => {
 
   // const [processes, setProcesses] = useState([{ arrival: "", burst: "", priority: "" }]);
   const [processes, setProcesses] = useState([
-    { arrival: "0", burst: "4", priority: "4" },
-    { arrival: "1", burst: "5", priority: "5" },
-    { arrival: "2", burst: "1", priority: "7" },
-    { arrival: "3", burst: "2", priority: "2" },
-    { arrival: "4", burst: "3", priority: "1" },
-    { arrival: "5", burst: "6", priority: "6" },
+    { arrival: "0", burst: "3", priority: "0" },
+    { arrival: "1", burst: "1", priority: "0" },
+    { arrival: "3", burst: "3", priority: "0" },
+    { arrival: "5", burst: "2", priority: "0" },
+    { arrival: "6", burst: "4", priority: "0" },
     
   ]);
 

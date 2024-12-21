@@ -6,6 +6,7 @@ import FCFSPage from './pages/FCFSPage';
 import SJFPage from "./pages/SJFPage";
 import RoundRobinPage from "./pages/RoundRobinPage";
 import PriorityPage from "./pages/PriorityPage";
+import SRTFPage from "./pages/SRTFPage.jsx";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/sjf" element={<SJFPage/>}   />
         <Route path="/round-robin" element={<RoundRobinPage/>}   />
         <Route path="/priority" element={<PriorityPage/>}   />
+        <Route path="/srtf" element={<SRTFPage/>}   />
       </Routes>
     </BrowserRouter>
     

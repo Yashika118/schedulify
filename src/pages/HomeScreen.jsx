@@ -3,15 +3,16 @@ import { Link } from 'react-router';
 
 
 const algorithms = [
-  { name: "First Come First Serve (FCFS)", path: "/fcfs", color: "bg-blue-500" },
-  { name: "Shortest Job First (SJF)", path: "/sjf", color: "bg-green-500" },
+  { name: "First Come First Serve", path: "/fcfs", color: "bg-blue-500" },
+  { name: "Shortest Job First", path: "/sjf", color: "bg-green-500" },
   { name: "Round Robin", path: "/round-robin", color: "bg-yellow-500" },
   { name: "Priority Scheduling", path: "/priority", color: "bg-red-500" },
+  { name: "Shortest Remaining Time First Scheduling", path: "/srtf", color: "bg-red-500" },
 ];
 
 const HomeScreen = () => {
   return (
-    <div className='h-screen flex flex-col bg-yellow-400 items-center'>
+    <div className='min-h-screen pb-5 flex flex-col bg-yellow-400 items-center'>
       {/* header */}
       <div className=' text-center py-8'>
         <h1 className='text-8xl font-bold'>SCHEDULIFY</h1>
@@ -23,7 +24,7 @@ const HomeScreen = () => {
         {algorithms.map((algorithm, index) => (
           <Link
             to={algorithm.path} key={index}
-            className='h-20 w-96 flex bg-black text-white items-center justify-center text-center 
+            className='p-12 h-20 w-96 flex bg-black text-white items-center justify-center text-center 
             text-xl border-black border-4 rounded-xl hover:scale-105 transition-transform duration-300'
           >
             {algorithm.name}

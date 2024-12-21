@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
-import InputForm from '../components/InputForm.jsx'
+import InputForm from '../components/InputForm';
 import ResultsTable from '../components/ResultsTable.jsx';
-import { fcfs } from "../Algorithms/FcfsAlgo.js";
+import {srtf} from '../Algorithms/SrtfAlgo.js';
 import GanttChart from '../components/GanttChart.jsx';
 
-const FCFSPage = () => {
+const SRTFPage = () => {
 
   const [results, setResults] = useState([]);
 
   const handleFormSubmit = (processes) => {
     // console.log("Submitted Processes : ", processes);
-    const output = fcfs(processes);
+    const output = srtf(processes);
     setResults(output);
   };
 
@@ -19,7 +19,7 @@ const FCFSPage = () => {
     <div className='min-h-screen bg-yellow-400'>
       {/* navbar */}
       <div className='h-full flex flex-col bg-yellow-400 items-center'>
-        <Navbar title="FIRST COME FIRST SERVE SCHEDULING" />
+        <Navbar title="SHORTEST REMAINING TIME FIRST SCHEDULING" />
 
         <div className='my-5'>
 
@@ -34,16 +34,12 @@ const FCFSPage = () => {
             ) 
           }
 
-
-
         </div>
 
       </div>
-
-
 
     </div>
   )
 }
 
-export default FCFSPage
+export default SRTFPage
