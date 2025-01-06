@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-👉 [**Try it out here!**](schedulify-nine.vercel.app) *(Replace with your live deployment link)*  
+👉 [**Try it out here!**](http://schedulify-nine.vercel.app) *(Replace with your live deployment link)*  
 
 ---
 
